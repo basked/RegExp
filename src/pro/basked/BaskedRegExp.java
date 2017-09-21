@@ -16,13 +16,12 @@ public class BaskedRegExp {
     }
 
     public static void main(String[] args) {
-        executeRegExp("b", "basked a bad boy");      // вхождение символа
-        executeRegExp("ba", "basked a bad boy");     // вхождение группы символов
-        executeRegExp("1\\+2=\\[3\\]", "1+2=[3]");   // специальные символы (метаcимволы ) []()+\.$^*|
-        executeRegExp("\\Q1+2=[3]\\E", "1+2=[3]");   // специальные символы (метаcимволы ), учитывая \\Q и \\E
+        executeRegExp("b", "basked a bad boy");      //  вхождение символа
+        executeRegExp("ba", "basked a bad boy");     //  вхождение группы символов
+        executeRegExp("1\\+2=\\[3\\]", "1+2=[3]");   //  специальные символы (метаcимволы ) []()+\.$^*|
+        executeRegExp("\\Q1+2=[3]\\E", "1+2=[3]");   //  специальные символы (метаcимволы ), учитывая \\Q и \\E
         executeRegExp("[1-9]", "0123456789");        //  наборы цифр
         executeRegExp("[a-c]", "abcdfc");            //  наборры символов
-
-
+        executeRegExp("[1-5a-c]", "1258abcdfc");   //    сгруппированные наборры символов
     }
 }
